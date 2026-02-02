@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #c7365f, #8a2f6b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTAINER */
+main {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+}
+
+/* PLAYER SECTIONS */
+.player {
+  flex: 1;
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.player--active {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* PLAYER NAME */
+.name {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* TOTAL SCORE */
+.score {
+  font-size: 75px;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: 45px;
+}
+
+/* CURRENT BOX */
+.current {
+  background: #c7365f;
+  color: #fff;
+  width: 65%;
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.current-label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.current-score {
+  font-size: 35px;
+}
+
+/* DICE */
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translateX(-50%);
+  height: 90px;
+  z-index: 50;   /* dice neeche */
+}
+
+/* BUTTONS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #333;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  z-index: 200;  /* buttons upar */
+}
+
+/* BUTTON POSITIONS */
+.btn--new {
+  top: 30px;
+}
+
+.btn--roll {
+  top: 62%;
+}
+
+.btn--hold {
+  top: 70%;
+}
