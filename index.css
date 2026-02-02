@@ -53,7 +53,7 @@ main {
   font-size: 75px;
   font-weight: 300;
   color: #c7365f;
-  margin-bottom: 45px;
+  margin-bottom: 150px;
 }
 
 /* CURRENT BOX */
@@ -64,6 +64,7 @@ main {
   margin: 0 auto;
   padding: 18px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .current-label {
@@ -99,7 +100,7 @@ main {
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-  z-index: 200;  /* buttons upar */
+  z-index: 10;  /* buttons upar */
 }
 
 /* BUTTON POSITIONS */
@@ -111,6 +112,10 @@ main {
   top: 62%;
 }
 
-.btn--hold {
-  top: 70%;
+
+  .btn--hold {
+  top: 74%;          
+  
+}
+
 }
